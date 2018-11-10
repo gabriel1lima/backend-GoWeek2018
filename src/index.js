@@ -8,7 +8,7 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
 mongoose.connect(
-    'mongodb://gabriel1lima:biel0907@ds155213.mlab.com:55213/goweek-gabriel1lima-backend', 
+    'mongodb://gabriel1lima:gabriel1lima@ds157843.mlab.com:57843/backend-goweek2018', 
     {
         useNewUrlParser: true
     }
@@ -29,5 +29,6 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
+console.log(port)
 
 server.listen(port);
