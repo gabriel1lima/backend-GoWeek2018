@@ -8,7 +8,7 @@ const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
 mongoose.connect(
-    'mongodb://gabriel1lima:gabriel1lima@ds157843.mlab.com:57843/backend-goweek2018', 
+    'mongodb://goweek:biel0907@ds157923.mlab.com:57923/backend_goweek2018', 
     {
         useNewUrlParser: true
     }
